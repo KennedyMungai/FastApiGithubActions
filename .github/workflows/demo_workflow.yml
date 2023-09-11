@@ -6,6 +6,11 @@ on:
             - main
             - dev
 
+env:
+    MYSQL_DATABASE: somedb
+    MYSQL_PASSWORD: Password1!
+    MYSQL_USER: root
+
 jobs:
     setup:
         runs-on: ubuntu-latest
