@@ -12,3 +12,5 @@ jobs:
         steps:
             - name: Retrieve Code
               uses: actions/checkout@v4
+            - name: Install Dependencies
+              run: pip install -r requirements.txt
