@@ -7,9 +7,9 @@ on:
             - dev
 
 env:
-    MYSQL_DATABASE: somedb
-    MYSQL_PASSWORD: Password1!
-    MYSQL_USER: root
+    MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+    MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+    MYSQL_USER: ${{ secrets.MYSQL_USER }}
 
 jobs:
     setup:
